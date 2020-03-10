@@ -9,7 +9,8 @@
 #'  
 #'@param C fit CI
 #'@param Const_Binder Const_Binder
-#'  
+#'@useDynLib fastbinder
+
 #'@export
 binder_naive=function(CI,  Const_Binder = 0.5){
 	return (I_binder_naive(CI, Const_Binder))
@@ -21,7 +22,7 @@ binder_naive=function(CI,  Const_Binder = 0.5){
 #'  
 #'@param C fit CI
 #'@param Const_Binder Const_Binder
-#'  
+#'@useDynLib fastbinder
 #'@export
 binder_opt=function(CI,  Const_Binder = 0.5){
 	return (I_binder_opt(CI, Const_Binder))
@@ -33,7 +34,7 @@ binder_opt=function(CI,  Const_Binder = 0.5){
 #'  
 #'@param C fit CI
 #'@param Const_Binder Const_Binder
-#'  
+#'@useDynLib fastbinder
 #'@export
 binder_parallel=function(CI,  Const_Binder = 0.5){
 	return (I_binder_parallel(CI, Const_Binder))
@@ -45,7 +46,7 @@ binder_parallel=function(CI,  Const_Binder = 0.5){
 #'  
 #'@param C fit CI
 #'@param Const_Binder Const_Binder
-#'  
+#'@useDynLib fastbinder
 #'@export
 fbinder = binder_parallel
 
