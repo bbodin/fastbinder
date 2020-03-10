@@ -17,6 +17,8 @@
 # Output files from R CMD check
 /*.Rcheck/
 
+/*.install/
+
 # RStudio files
 .Rproj.user/
 
@@ -28,12 +30,41 @@ vignettes/*.pdf
 .httr-oauth
 
 # knitr and R markdown default cache directories
-*_cache/
+/*_cache/
 /cache/
 
 # Temporary files created by R markdown
 *.utf8.md
 *.knit.md
 
-# R Environment Variables
-.Renviron
+# Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
+rsconnect/
+
+
+src/RcppExports.cpp
+R/RcppExports.R
+src/*.o
+src/*.so
+src/*.rds
+*~
+Rplots.pdf
+
+
+.cproject
+.project
+.settings/
+
+man/*.Rd
+test.R
+
+*.Rinstall
+
+fastbinder/R/RcppExports.R
+fastbinder/man/*
+*.so
+fastbinder/src/RcppExports.cpp
+fastbinder/NAMESPACE
+/*.pdf
+docker_share/
+*.o
+tests_cpp/test_binders

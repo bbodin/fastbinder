@@ -1,0 +1,18 @@
+Package: fastbinder
+Version: 1.0.0
+Date: 2020-03-15
+Type: Package
+Title: Fast implementation of the Binder algorithm
+Authors@R: c(person("Bruno", "Bodin", role = c("aut", "cre"), email = "bruno.bodin@yale-nus.edu.sg"))
+Author: Bruno Bodin [aut, cre]
+Maintainer: Bruno Bodin <bruno.bodin@yale-nus.edu.sg>
+Description: Provides series of implementation for the Binder algorithm.
+License: MIT + file LICENSE
+LazyData: true
+URL: https://github.com/bbodin/fastbinder
+Imports: 
+    Rcpp (>= 0.12.3)
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.0.2
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
