@@ -7,8 +7,8 @@
 
 #include "binders.h"
 
-#define ceild(n,d)  ceil(((double)(n))/((double)(d)))
-#define floord(n,d) floor(((double)(n))/((double)(d)))
+#define ceild(n,d)  std::ceil(((double)(n))/((double)(d)))
+#define floord(n,d) std::floor(((double)(n))/((double)(d)))
 
 #define TILE_SIZE 64
 

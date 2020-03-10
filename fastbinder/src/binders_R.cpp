@@ -10,7 +10,7 @@
 
 
 // [[Rcpp::export]]
-long IAM_binder_naive (Rcpp::IntegerMatrix  CI, int version = 0,   double Const_Binder = 0.5 ){
+long I_binder_naive (Rcpp::IntegerMatrix  CI, int version = 0,   double Const_Binder = 0.5 ){
 
 	arma::uword Binder_ind = naive_binder ( Rcpp::as<binder_mat_t>(CI) , Const_Binder);
 
@@ -22,7 +22,7 @@ long IAM_binder_naive (Rcpp::IntegerMatrix  CI, int version = 0,   double Const_
 }
 
 // [[Rcpp::export]]
-long IAM_binder_opt (Rcpp::IntegerMatrix  CI, int version = 0,   double Const_Binder = 0.5 ){
+long I_binder_opt (Rcpp::IntegerMatrix  CI, int version = 0,   double Const_Binder = 0.5 ){
 
 	arma::uword Binder_ind = opt_binder ( Rcpp::as<binder_mat_t>(CI) , Const_Binder);
 
@@ -34,7 +34,7 @@ long IAM_binder_opt (Rcpp::IntegerMatrix  CI, int version = 0,   double Const_Bi
 }
 
 // [[Rcpp::export]]
-long IAM_binder_parallel (Rcpp::IntegerMatrix  CI, int version = 0,   double Const_Binder = 0.5 ){
+long I_binder_parallel (Rcpp::IntegerMatrix  CI, int version = 0,   double Const_Binder = 0.5 ){
 
 	arma::uword Binder_ind = parallel_binder ( Rcpp::as<binder_mat_t>(CI) , Const_Binder);
 

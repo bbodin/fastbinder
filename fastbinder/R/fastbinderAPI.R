@@ -11,8 +11,8 @@
 #'@param Const_Binder Const_Binder
 #'  
 #'@export
-AM_binder_naive=function(CI,  Const_Binder = 0.5){
-	return (IAM_binder_naive(CI, Const_Binder))
+binder_naive=function(CI,  Const_Binder = 0.5){
+	return (I_binder_naive(CI, Const_Binder))
 }
 
 #'  Run the ptimized binder algorithm (TBD)
@@ -23,8 +23,8 @@ AM_binder_naive=function(CI,  Const_Binder = 0.5){
 #'@param Const_Binder Const_Binder
 #'  
 #'@export
-AM_binder_opt=function(CI,  Const_Binder = 0.5){
-	return (IAM_binder_opt(CI, Const_Binder))
+binder_opt=function(CI,  Const_Binder = 0.5){
+	return (I_binder_opt(CI, Const_Binder))
 }
 
 #'  Run the parallel binder algorithm (TBD)
@@ -35,8 +35,8 @@ AM_binder_opt=function(CI,  Const_Binder = 0.5){
 #'@param Const_Binder Const_Binder
 #'  
 #'@export
-AM_binder_parallel=function(CI,  Const_Binder = 0.5){
-	return (IAM_binder_parallel(CI, Const_Binder))
+binder_parallel=function(CI,  Const_Binder = 0.5){
+	return (I_binder_parallel(CI, Const_Binder))
 }
 
 #'  Run the parallel binder algorithm (TBD)
@@ -47,7 +47,7 @@ AM_binder_parallel=function(CI,  Const_Binder = 0.5){
 #'@param Const_Binder Const_Binder
 #'  
 #'@export
-AM_binder = AM_binder_parallel
+fbinder = binder_parallel
 
 #'  Run the binder algorithm using Andrea implementation (TBD)
 #'  
@@ -57,7 +57,7 @@ AM_binder = AM_binder_parallel
 #'@param Const_Binder Const_Binder
 #'  
 #'@export
-AM_binder_andrea=function (CI,  weight = 0.5) {
+binder_andrea=function (CI,  weight = 0.5) {
 	
 	#Equal costs
 	Const_Binder <- weight
