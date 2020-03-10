@@ -21,7 +21,7 @@ ls("package:AntMAN")
 #if (!require("fastbinder")) {devtools::install_github("bbodin/fastbinder", subdir="fastbinder");}
 
 #.libPaths(c("/home/toky/yalenus/research/mixture/fastbinder/fastbinder.Rinstall", .libPaths()))
-#remove.packages("fastbinder")
+remove.packages("fastbinder")
 
 if (!require("fastbinder")) {devtools::install_github("bbodin/fastbinder", subdir="fastbinder", dependencies = FALSE);}
 
