@@ -10,6 +10,6 @@ Current performance on classic laptop :
 - binder salso normal is  16.22626  secs
 - binder C optimized is  12.62496  secs
 - binder C naive is  35.60505  secs
-- binder_andrea is  94.92825  secs
+- binder_R is  94.92825  secs
 
 MIT Licence
